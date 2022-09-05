@@ -1,5 +1,5 @@
 //code!
-document.addEventListener('keyup', 
+document.addEventListener('keydown', 
   function(e) {
     if (e.key === 'ArrowLeft') {
         moveDodgerLeft();
@@ -9,7 +9,7 @@ document.addEventListener('keyup',
   })
 
   function moveDodgerLeft() {
-    let leftNum = dodgerLeft.style.left.replace('px', '');
+    let leftNum = dodger.style.left.replace('px', '');
     let left = parseInt(leftNum, 10);
 
     if (left > 0) {
